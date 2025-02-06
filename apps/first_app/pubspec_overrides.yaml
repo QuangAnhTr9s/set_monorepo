@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: first_package
+dependency_overrides:
+  first_package:
+    path: ../../packages/first_package
