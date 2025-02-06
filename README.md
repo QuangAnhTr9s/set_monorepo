@@ -16,13 +16,21 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 /// Set up
+dart pub global activate melos
+dart pub global activate very_good_cli
+
+- Add Melos, very_good_cli
+- Add apps, packages directory
+- Add Melos.yaml
+
 Apps:
 very_good create flutter_app first_app --desc "First app" --application-id "com.monorepo.firstapp"
 very_good create flutter_app second_app --desc "Second app" --application-id "com.monorepo.secondapp"
 
-Packages: very_good create flutter_package first_package --desc "First package"
+Packages:
+very_good create flutter_package first_package --desc "First package"
 very_good create flutter_package second_package --desc "Second package"
 
-
 - Add packages to pub-spec for every app and run: “melos bs” to pub get.
+- Add file generate_app_run_config.sh to auto gen runConfiguartions.
 - Run to auto gen runConfiguartions: melos generate-run-config
